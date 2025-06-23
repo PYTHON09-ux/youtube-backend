@@ -1,3 +1,4 @@
+import { app } from "./app.js";
 import connectDB from "./db/index.js";
 import donenv from 'dotenv'
 
@@ -10,6 +11,9 @@ donenv.config({
 
 connectDB()
 
+app.listen(process.env.PORT || 8080, ()=>{
+    console.log(`app is running on port ${process.env.PORT}`)
+})
 
 
 
