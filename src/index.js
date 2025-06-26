@@ -4,7 +4,7 @@ import donenv from 'dotenv'
 
 
 donenv.config({
-    path:'./env'
+    path:'./.env'
 })
 
 
